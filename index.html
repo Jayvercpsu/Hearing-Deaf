@@ -1429,7 +1429,6 @@
             
             quizContent.innerHTML = `
                 <div class="question">
-                    <div class="question-icon">${question.icon}</div>
                     <h3>Question ${currentQuizQuestion + 1} of ${quizData.length}</h3>
                     <p style="font-size: 1.15rem; margin-bottom: 1.5rem; font-weight: 500;">${question.question}</p>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;" id="quizOptions">
@@ -1438,9 +1437,7 @@
                                 <div style="width: 100%; aspect-ratio: 1 / 1; background: var(--light-yellow); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                                     ${option.image}
                                 </div>
-                                <div style="text-align: center; font-size: 0.95rem; font-weight: 600;">
-                                    ${option.text}
-                                </div>
+                                <div style="display:none;"></div>
                             </div>
                         `).join('')}
                     </div>
